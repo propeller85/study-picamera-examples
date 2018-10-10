@@ -9,7 +9,7 @@ class SimpleStreamer(object):
     def __init__(self, flip = False):
         self.vs = PiVideoStream(resolution=(400, 304), framerate=3).start()
         self.flip = flip
-        time.sleep(2.0)
+        time.sleep(1.0)
 
     def __del__(self):
         self.vs.stop()
