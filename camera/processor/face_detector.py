@@ -7,7 +7,7 @@ import cv2
 
 class FaceDetector(object):
     def __init__(self, flip = True):
-        self.vs = PiVideoStream(resolution=(800, 608)).start()
+        self.vs = PiVideoStream(resolution=(800, 608), framerate=3).start()
         self.flip = flip
         time.sleep(2.0)
 
